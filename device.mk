@@ -30,7 +30,11 @@ DEVICE_PATH := device/xiaomi/lavender
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+         $(DEVICE_PATH)
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
