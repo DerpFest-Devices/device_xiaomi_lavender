@@ -36,6 +36,7 @@ $(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
+SSOS_BUILD_TYPE := OFFICIAL
 
 # Inherit ShapeShiftOS common properties.
 PRODUCT_PRODUCT_PROPERTIES += \
