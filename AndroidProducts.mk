@@ -23,9 +23,9 @@
 
 # Inherit Redmi Note 7 device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_lavender.mk
+    $(LOCAL_DIR)/revengeos_lavender.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_lavender-eng \
-    ssos_lavender-userdebug \
-    ssos_lavender-user
+    revengeos_lavender-eng \
+    revengeos_lavender-userdebug \
+    revengeos_lavender-user
