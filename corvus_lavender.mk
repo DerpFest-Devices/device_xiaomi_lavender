@@ -30,10 +30,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BOOTANIM_LOW_RES := true
-REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -44,7 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/coral/coral:11/RQ2A.210505.002/7246365:user/release-keys
 
 # Device identifier
-PRODUCT_NAME := revengeos_lavender
+PRODUCT_NAME := corvus_lavender
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
@@ -54,3 +53,7 @@ PRODUCT_MODEL := Redmi Note 7
 TARGET_VENDOR_PRODUCT_NAME := lavender
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Corvus Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.corvus.maintainer= Pokorny72
